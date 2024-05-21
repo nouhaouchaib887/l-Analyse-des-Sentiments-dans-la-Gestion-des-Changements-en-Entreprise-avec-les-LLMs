@@ -310,7 +310,7 @@ def matrice_confusion(cm, task):
 
     return fig
     
-avis = pd.read_csv("../streamli_App/Gestion des changements.csv")
+avis = pd.read_csv("../streamlit_App/Gestion des changements.csv")
 # Nettoyage
 avis.dropna(inplace=True)
 avis["synergy"] = avis["synergy"].replace({"Interessé": "Intéressé", "Engagé ": "Engagé"})
