@@ -310,7 +310,7 @@ def matrice_confusion(cm, task):
 
     return fig
     
-#avis = pd.read_csv('../Gestion des changements.csv')
+avis = pd.read_csv('/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Gestion des changements.csv')
 # Nettoyage
 #avis.dropna(inplace=True)
 #avis["synergy"] = avis["synergy"].replace({"Interessé": "Intéressé", "Engagé ": "Engagé"})
