@@ -16,7 +16,7 @@ avis["antagonism"] = avis["antagonism"].replace({"Concillant": "Conciliant"})
 avis["class"] = avis.apply(assign_group, axis=1)
 avis0 =avis
 data11 = pd.read_csv("/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Resultats/predictions_bart_large_mnli_1.csv")
-data21 = pd.read_csv(/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Resultats/predictions_deberta_v3_large_zeroshot_v2_0_1.csv")
+data21 = pd.read_csv("/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Resultats/predictions_deberta_v3_large_zeroshot_v2_0_1.csv")
 data31 = pd.read_csv("/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Resultats/predictions_deberta_v3_large_zeroshot_v2_0_c_1.csv")
 data41 = pd.read_csv("/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Resultats/predictions_deberta_v3_base_zeroshot_v2_0_1.csv")
 data51 = pd.read_csv("/mount/src/l-analyse-des-sentiments-dans-la-gestion-des-changements-en-entreprise-avec-les-llms/streamlit_App/Resultats/predictions_roberta_large_zeroshot_v2_0_1.csv")
