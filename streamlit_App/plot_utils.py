@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 from collections import Counter
+from sklearn import metrics
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score, accuracy_score
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -307,14 +309,7 @@ def matrice_confusion(cm, task):
     fig.update_layout(title='Confusion Matrix', xaxis_title='Predicted labels', yaxis_title='True labels')
 
     return fig
-import streamlit as st 
-import pandas as pd 
-import numpy as np
-from transformers import pipeline
-import matplotlib.pyplot as plt
-from sklearn import metrics
-from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score, accuracy_score
-
+    
 avis = pd.read_csv("C:/Users/HP/Downloads/Gestion des changements.csv")
 # Nettoyage
 avis.dropna(inplace=True)
