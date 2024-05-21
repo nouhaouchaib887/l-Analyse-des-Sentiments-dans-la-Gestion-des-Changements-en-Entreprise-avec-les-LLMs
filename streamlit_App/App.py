@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+# Afficher le répertoire de travail actuel
+current_path = os.getcwd()
+st.write(current_path)
+
 from plot_utils import create_carte_allies, create_bar_chart, create_heatmap, matrice_confusion, evaluation_1, evaluation_2 , evaluation_3, assign_group, evolution_f1_score
 
 
