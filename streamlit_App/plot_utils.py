@@ -316,10 +316,7 @@ def matrice_confusion(cm, task):
 #avis["synergy"] = avis["synergy"].replace({"Interessé": "Intéressé", "Engagé ": "Engagé"})
 #avis["antagonism"] = avis["antagonism"].replace({"Concillant": "Conciliant"})
 #avis0 =avis
-from pathlib import Path
-
-path = Path(__file__).parent / "Resultats"
-data11 = pd.read_csv("path/predictions_bart_large_mnli_1.csv")
+data11 = pd.read_csv(r"Resultats/predictions_bart_large_mnli_1.csv")
 data21 = pd.read_csv("../streamlit_App/predictions_deberta_v3_large_zeroshot_v2_0_1.csv")
 data31 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_c_1.csv")
 data41 = pd.read_csv("Résultats/predictions_deberta_v3_base_zeroshot_v2_0_1.csv")
