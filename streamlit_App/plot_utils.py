@@ -310,14 +310,14 @@ def matrice_confusion(cm, task):
 
     return fig
     
-avis = pd.read_csv('../Gestion des changements.csv')
+#avis = pd.read_csv('../Gestion des changements.csv')
 # Nettoyage
 #avis.dropna(inplace=True)
 #avis["synergy"] = avis["synergy"].replace({"Interessé": "Intéressé", "Engagé ": "Engagé"})
 #avis["antagonism"] = avis["antagonism"].replace({"Concillant": "Conciliant"})
 #avis0 =avis
 
-data11 = pd.read_csv("../Résultats/predictions_bart_large_mnli_1.csv")
+data11 = pd.read_csv("Resultats/predictions_bart_large_mnli_1.csv")
 data21 = pd.read_csv("../streamlit_App/predictions_deberta_v3_large_zeroshot_v2_0_1.csv")
 data31 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_c_1.csv")
 data41 = pd.read_csv("Résultats/predictions_deberta_v3_base_zeroshot_v2_0_1.csv")
