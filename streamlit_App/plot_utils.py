@@ -310,31 +310,31 @@ def matrice_confusion(cm, task):
 
     return fig
     
-avis = pd.read_csv("C:/Users/HP/Downloads/Gestion des changements.csv")
+avis = pd.read_csv("Gestion des changements.csv")
 # Nettoyage
 avis.dropna(inplace=True)
 avis["synergy"] = avis["synergy"].replace({"Interessé": "Intéressé", "Engagé ": "Engagé"})
 avis["antagonism"] = avis["antagonism"].replace({"Concillant": "Conciliant"})
 avis0 =avis
 
-data11 = pd.read_csv("C:/Users/HP/Downloads/predictions_bart_large_mnli_1.csv")
-data21 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_large_zeroshot_v2_0_1.csv")
-data31 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_large_zeroshot_v2_0_c_1.csv")
-data41 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_base_zeroshot_v2_0_1.csv")
-data51 = pd.read_csv("C:/Users/HP/Downloads/predictions_roberta_large_zeroshot_v2_0_1.csv")
-data61 = pd.read_csv("C:/Users/HP/Downloads/predictions_bge_m3_zeroshot_v2_0_1.csv")
-data12 = pd.read_csv("C:/Users/HP/Downloads/predictions_bart_large_mnli_2.csv")
-data22 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_large_zeroshot_v2_0_2.csv")
-data32 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_large_zeroshot_v2_0_c_2.csv")
-data42 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_base_zeroshot_v2_0_2.csv")
-data52 = pd.read_csv("C:/Users/HP/Downloads/predictions_roberta_large_zeroshot_v2_0_2.csv")
-data62 = pd.read_csv("C:/Users/HP/Downloads/predictions_bge_m3_zeroshot_v2_0_2.csv")
-data13 = pd.read_csv("C:/Users/HP/Downloads/predictions_bart_large_mnli_3.csv")
-data23 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_large_zeroshot_v2_0_3.csv")
-data33 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_large_zeroshot_v2_0_c_3.csv")
-data43 = pd.read_csv("C:/Users/HP/Downloads/predictions_deberta_v3_base_zeroshot_v2_0_3.csv")
-data53 = pd.read_csv("C:/Users/HP/Downloads/predictions_roberta_large_zeroshot_v2_0_3.csv")
-data63 = pd.read_csv("C:/Users/HP/Downloads/predictions_bge_m3_zeroshot_v2_0_3.csv")
+data11 = pd.read_csv("Résultats/predictions_bart_large_mnli_1.csv")
+data21 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_1.csv")
+data31 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_c_1.csv")
+data41 = pd.read_csv("Résultats/predictions_deberta_v3_base_zeroshot_v2_0_1.csv")
+data51 = pd.read_csv("Résultats/predictions_roberta_large_zeroshot_v2_0_1.csv")
+data61 = pd.read_csv("Résultats/predictions_bge_m3_zeroshot_v2_0_1.csv")
+data12 = pd.read_csv("Résultats/predictions_bart_large_mnli_2.csv")
+data22 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_2.csv")
+data32 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_c_2.csv")
+data42 = pd.read_csv("Résultats/predictions_deberta_v3_base_zeroshot_v2_0_2.csv")
+data52 = pd.read_csv("Résultats/predictions_roberta_large_zeroshot_v2_0_2.csv")
+data62 = pd.read_csv("Résultats/predictions_bge_m3_zeroshot_v2_0_2.csv")
+data13 = pd.read_csv("Résultats/predictions_bart_large_mnli_3.csv")
+data23 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_3.csv")
+data33 = pd.read_csv("Résultats/predictions_deberta_v3_large_zeroshot_v2_0_c_3.csv")
+data43 = pd.read_csv("Résultats/predictions_deberta_v3_base_zeroshot_v2_0_3.csv")
+data53 = pd.read_csv("Résultats/predictions_roberta_large_zeroshot_v2_0_3.csv")
+data63 = pd.read_csv("Résultats/predictions_bge_m3_zeroshot_v2_0_3.csv")
 y_test_synergy = avis0["synergy"]
 y_test_antagonism = avis0["antagonism"]
 y_test = avis0["class"]
