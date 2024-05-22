@@ -29,6 +29,6 @@ Pour exécuter l'application Streamlit localement, suivez ces étapes :
    ```bash
    streamlit run App.py
 
-** lien vers l'application streamlit** : https://bxzfe8urqtecurcmrs9red.streamlit.app/
+**lien vers l'application streamlit** : https://bxzfe8urqtecurcmrs9red.streamlit.app/
 
 
