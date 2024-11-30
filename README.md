@@ -1,34 +1,40 @@
-<h1 align="center">Analyse des Sentiments dans la Gestion des Changements en Entreprise avec les Modèles Zero-Shot</h1>
+<h1 align="center">Sentiment Analysis in Change Management Using Zero-Shot Models</h1>
 
 ---
 
-## Objectif du Projet
-Ce projet vise à automatiser la classification des réactions des employés face aux changements organisationnels en exploitant des algorithmes de traitement du langage naturel. Notre application d'analyse des sentiments cherche à identifier le degré d'engagement des employés vis-à-vis des changements proposés.
+## Project Objective
+This project aims to automate the classification of employee reactions to organizational changes by leveraging natural language processing algorithms. Our sentiment analysis application seeks to identify the level of employee engagement with proposed changes.
 
-## Contexte et Justification
-Dans le cadre de la gestion des changements en entreprise, l'analyse des communications écrites et orales des employés est essentielle. Cependant, l'indisponibilité des données étiquetées nous a orientés vers l'utilisation de modèles de classification zero-shot. Ces modèles, qui ne nécessitent pas de données étiquetées pour des classes spécifiques, permettent une grande flexibilité et adaptabilité à des tâches non vues auparavant.
+---
 
-## Solution Proposée
-Nous utilisons Les grands modèles de langage (LLM), disponibles en open source sur la plateforme Hugging Face, et les adaptons à notre tâche via des techniques de prompting. Une évaluation comparative de ces modèles a été réalisée pour identifier le plus performant pour notre application spécifique.
+## Context 
+In the context of organizational change management, analyzing written and verbal communications from employees is essential. However, the lack of labeled data has led us to use zero-shot classification models. These models, which do not require labeled data for specific classes, provide great flexibility and adaptability for unseen tasks.
 
-## Fichiers et Répertoires
-- **Models_Zero_Shot_Evaluation.csv** : Contient les résultats d'évaluation des modèles sur plusieurs benchmarks.
-- **Gestion des changements.csv** : Dataset d'évaluation comprenant des extraits variés des communications des employés.
-- **Models_SA.ipynb** : Notebook Jupyter pour l'évaluation comparative des modèles.
-- **streamlit_App/App.py** : Application Streamlit développée pour la visualisation interactive des résultats.
-- **streamlit_App/plot_utils.py** : Contient des outils de plotting et d'autres fonctions utilisées dans l'application Streamlit.
-- **requirements.txt** : Liste des bibliothèques nécessaires pour exécuter l'application.
+---
 
-## Déploiement de l'Application
-Pour exécuter l'application Streamlit localement, suivez ces étapes :
-1. Clonez le dépôt sur votre machine locale.
-2. Installez les dépendances :
+## Proposed Solution
+We use Large Language Models (LLMs), available as open-source on the Hugging Face platform, and adapt them to our task using prompting techniques. A comparative evaluation of these models was conducted to identify the best-performing one for our specific application.
+
+---
+
+## Files and Directories
+- **Models_Zero_Shot_Evaluation.csv**: Contains evaluation results of the models across various benchmarks.
+- **Gestion des changements.csv**: Evaluation dataset containing diverse excerpts from employee communications.
+- **Models_SA.ipynb**: Jupyter Notebook for the comparative evaluation of the models.
+- **streamlit_App/App.py**: Streamlit application developed for interactive results visualization.
+- **streamlit_App/plot_utils.py**: Contains plotting tools and other functions used in the Streamlit application.
+- **requirements.txt**: List of libraries required to run the application.
+
+---
+
+## Application Deployment
+To run the Streamlit application locally, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
-3. Naviguez vers le dossier streamlit_App et lancez l'application :
-   ```bash
+3. Navigate to the streamlit_App folder and launch the application :
+    ```bash
    streamlit run App.py
-
-**lien vers l'application streamlit** : https://bxzfe8urqtecurcmrs9red.streamlit.app/
-
-
+**Link to the Streamlit application** : https://bxzfe8urqtecurcmrs9red.streamlit.app/
